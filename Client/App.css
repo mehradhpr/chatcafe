@@ -1,0 +1,253 @@
+:root {
+  --primary-color: #658b9e;
+  --secondary-color: #F4ACB7;
+  --background-color: #F1EDEE;
+  --text-color: #3D405B;
+  --border-color: #A5978B;
+  --muted-text-color: #8D9DB6;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  padding: 40px;
+  font-family: Roboto, Arial, sans-serif;
+  text-align: center;
+  border-radius: 5px;
+}
+
+h2 {
+  font-size: 40px;
+  color: var(--primary-color)
+}
+
+form {
+  font-size: 20px;
+  text-align: center;
+  gap: 15px;
+}
+
+input {
+  border: 3px solid var(--border-color);
+  font-size: large;
+  font-family: Verdana, Arial, sans-serif;
+  color: var(--text-color);
+  padding: 10px 15px;
+  margin: 10px;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+
+}
+
+input[type="submit"]:hover {
+  background-color: var(--secondary-color);
+}
+
+input:hover {
+  border-color: var(--secondary-color);
+}
+
+input[type="submit"] {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  cursor: pointer;
+  border: none;
+  padding: 10px 15px;
+  margin: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.delete-button {
+  pointer-events: all;
+  background-color: transparent;
+  color: var(--text-color);
+  cursor: pointer;
+  border: 1px solid red;
+  transition: background-color 0.3s;
+  font-size: 11px;
+  padding: 5px 10px;
+  margin: 5px 3px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.delete-button:hover {
+  background-color: red;
+}
+
+.channelBannerT {
+  font-weight: bolder;
+}
+
+
+.link-unstyled {
+  text-decoration: none;
+  color: inherit;
+}
+
+.ChannelsList {
+  width: 60%;
+  float: left;
+  border-radius: 5px;
+  border: 3px solid var(--border-color);
+}
+
+.ChannelCreation {
+  width: 35%;
+  float: right;
+  border: 3px solid var(--secondary-color);
+  border-radius: 5px;
+}
+
+.userInfo {
+  width: 50%;
+  text-align: left;
+}
+
+.ChannelB {
+  border: 1px solid var(--border-color);
+  margin: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  padding: 5px;
+  transition: background-color 0.3s;
+}
+
+.ChannelB:hover {
+  background-color: var(--secondary-color);
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.channel-page {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid var(--border-color);
+  border-radius: 4px;
+}
+
+.channel-box {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 10px;
+  margin-bottom: 10px;
+  bottom: 10px;
+  position: relative;
+}
+
+.empty-message-box {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+  color: var(--primary-color);
+}
+
+.input-area {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  left: 50px;
+  right: 50px;
+  border-radius: 4px;
+}
+
+.input-area input {
+  flex-grow: 1;
+  padding: 10px 15px;
+  border-radius: 20px;
+  outline: none;
+}
+
+.message {
+  margin-bottom: 15px;
+  max-width: fit-content;
+  text-align: left;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-color);
+  margin: 10px;
+  padding: 5px;
+}
+
+.nickname {
+  font-style: italic;
+  font-size: 13px;
+  color: var(--muted-text-color);
+  margin-bottom: 2px;
+}
+
+.content {
+  word-wrap: break-word;
+  display: inline-block;
+  clear: both;
+  padding: 5px 10px;
+}
+
+button {
+  font-size: large;
+  font-family: Verdana, Arial, sans-serif;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  cursor: pointer;
+  border: none;
+  margin: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  padding: 10px 15px;
+}
+
+button:hover {
+  background-color: var(--secondary-color);
+}
+
+.like-button,
+.dislike-button,
+.reply-button {
+  background-color: transparent;
+  color: var(--text-color);
+  cursor: pointer;
+  border: 1px solid var(--secondary-color);
+  transition: background-color 0.3s;
+  font-size: 11px;
+  padding: 5px 10px;
+  margin: 5px 3px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.like-button:hover,
+.dislike-button:hover,
+.reply-button:hover {
+  background-color: var(--secondary-color);
+}
+
+.AccountsB {
+  text-decoration: none;
+  color: inherit;
+  font-size: large;
+  font-family: Verdana, Arial, sans-serif;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  cursor: pointer;
+  border: none;
+  margin: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  padding: 10px 15px;
+}
+
+.AccountsB:hover {
+  background-color: var(--secondary-color);
+}
